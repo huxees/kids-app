@@ -1,0 +1,84 @@
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: -5px;
+  margin-bottom: 30px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* Общие стили для карточек-кнопок */
+.action-card {
+  background: #ffffff;
+  border: none;
+  border-radius: 24px;
+  width: 100px;
+  height: 105px;
+  padding: 18px 8px 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Равномерно распределяет иконку и текст */
+  cursor: pointer;
+  box-sizing: border-box;
+  
+  /* Эффект легкой выпуклости и мягкой тени */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08), 
+              0 2px 4px rgba(0, 0, 0, 0.04);
+  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Смещаем центральную кнопку вниз */
+.action-card:nth-child(2) {
+  transform: translateY(16px);
+}
+
+/* Общий стиль для всех картинок-иконкок внутри кнопок */
+.action-card img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain; /* Сохраняет пропорции ваших иконок без искажения */
+  display: block;
+}
+
+/* Индивидуальные стили, если иконки разного размера (опционально) */
+.action-card img.phoneCall {
+  width: 42px;
+  height: 42px;
+}
+
+.action-card img.receipt {
+  width: 40px;
+  height: 40px;
+}
+
+.action-card img.chatBubble {
+  width: 42px;
+  height: 42px;
+}
+
+/* Текст под иконкой */
+.action-card span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1c1c1e;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Эффект клика */
+.action-card:active {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.action-card:nth-child(1):active,
+.action-card:nth-child(3):active {
+  transform: translateY(2px);
+}
+
+.action-card:nth-child(2):active {
+  transform: translateY(18px); /* Учитываем исходный сдвиг 16px + 2px при нажатии */
+}

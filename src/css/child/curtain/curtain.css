@@ -1,0 +1,60 @@
+.curtain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 22px;
+  box-sizing: border-box;
+  z-index: 100;
+  color: #ffffff;
+}
+
+.curtain .notch {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 26px;
+  background-color: #000000;
+  border-radius: 18px;
+}
+
+.curtain .Time {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  color: black;
+  padding-left: 20px;
+  /* align-content: center; */
+}
+
+.curtain .status-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-right: 20px;
+}
+
+.curtain .status-bar img {
+  height: 15px;
+  object-fit: contain;
+  display: block;
+}
+
+.curtain .status-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-right: 20px;
+}
+
+.curtain .status-bar img {
+  height: 15px;
+  object-fit: contain;
+  display: block;
+} 

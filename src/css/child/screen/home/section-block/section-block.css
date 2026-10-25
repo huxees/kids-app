@@ -1,0 +1,110 @@
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.section-header h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.active-badge {
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.limit-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1f5f9;
+  border-left: 6px solid #10b981;
+  margin-bottom: 12px;
+}
+
+.limit-icon-wrap img{
+  object-fit: contain; /* Сохраняет пропорции ваших иконок без искажения */
+  display: block;
+  /* width: 100%; */
+  height: 100%;
+  max-height: 42px; 
+  opacity: 0.9;
+}
+
+.limit-info {
+  flex: 1;
+}
+
+.limit-title-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.limit-name {
+  font-weight: 800;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.limit-tag {
+  background: #dbeafe;
+  color: #1e40af;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.limit-desc {
+  font-size: 12px;
+  color: #64748b;
+  margin: 2px 0 8px 0;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 6px;
+  background: #f1f5f9;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #10b981;
+  border-radius: 3px;
+}
+
+.limit-footer {
+  font-size: 11px;
+  color: #64748b;
+  margin: 0;
+}
+
+.limit-timer {
+  background: #ecfdf5;
+  color: #047857;
+  border: 2px solid #10b981;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+}
