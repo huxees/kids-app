@@ -5,6 +5,8 @@
 @import './child/screen/home/action-buttons/action-buttons.css';
 @import './child/screen/home/section-block/section-block.css';
 @import './child/nav/nav.css';
+@import './child/screen/transfer/transfer.css';
+@import './child/screen/home/action-buttons/call.css';
 
 body {
   margin: 0;
@@ -48,7 +50,7 @@ body {
   overflow: hidden;
 }
 
-.screen {
+/* .screen {
   flex: 1;
   position: relative;
   overflow-y: auto;
@@ -58,16 +60,38 @@ body {
   padding: 0 !important; 
   width: 375px;
   height: 750px;
+} */
+ .screen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  overflow: hidden; /* Запрещаем скроллить весь экран целиком */
+  box-sizing: border-box;
+}
+.content-container {
+  flex: 1;
+  overflow-y: auto;       /* Включаем вертикальную прокрутку */
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+/* Для современных браузеров (Chrome, Safari, Opera, Edge) */
+.content-container::-webkit-scrollbar {
+  display: none; /* Полностью скрывает полосу прокрутки */
+}
+
+/* Для Firefox */
+.content-container {
+  scrollbar-width: none; /* Скрывает полосу прокрутки */
 }
 
 .child-home-screen {
   background: linear-gradient(180deg, #8a3ffc 0%, #b892ff 40%, #f4eeff 70%, #ffffff 100%);
   padding: 35px 16px 20px 16px; 
-  width: 100%;
+  min-width: 100%;
   box-sizing: border-box; 
   flex: 1;
   box-sizing: border-box;
-  overflow-y: auto; 
 }
 
 .child-home-screen::-webkit-scrollbar {
